@@ -16,6 +16,11 @@
 // The next line contains  space-separated integers contained in the array.
 
 function aVeryBigSum(ar) {
-
-
+    let adder = 0
+    for (let i = 0; i < ar.length; i++) {
+        adder += ar[i]
+    }
+    return adder
 }
+
+console.log(aVeryBigSum([100000000000000001, 1000000002, 1000000003, 1000000004, 1000000005]))
