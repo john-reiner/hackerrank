@@ -27,6 +27,3 @@ function compareTriplets(a, b) {
     }
     return returnArray
 }
-
-console.log(compareTriplets([1,2,3] , [99,99,99]))
-console.log(compareTriplets([100,2,3] , [99,99,99]))
