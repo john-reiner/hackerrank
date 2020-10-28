@@ -12,5 +12,3 @@ function timeConversion(s) {
         return hourString.concat(minSec)
     }
 }
-
-console.log(timeConversion('01:05:45AM'))
