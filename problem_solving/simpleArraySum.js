@@ -1,0 +1,3 @@
+function simpleArraySum(ar) {
+    
+}
