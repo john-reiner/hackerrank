@@ -11,5 +11,3 @@ function staircase(n) {
         console.log(row)
     }
 }
-
-console.log(staircase(100))
