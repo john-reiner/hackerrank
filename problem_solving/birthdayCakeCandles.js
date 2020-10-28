@@ -6,5 +6,3 @@ function birthdayCakeCandles(candles) {
     }
     return count 
 }
-
-console.log(birthdayCakeCandles([3,2,1,3]))
