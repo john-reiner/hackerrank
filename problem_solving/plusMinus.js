@@ -13,5 +13,3 @@ function plusMinus(arr) {
     console.log((returnedArray[1] / arr.length).toFixed(6))
     console.log((returnedArray[2] / arr.length).toFixed(6))
 }
-
-console.log(plusMinus([1,1,0,-1,-1]))
