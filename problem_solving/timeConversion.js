@@ -1,23 +1,16 @@
 function timeConversion(s) {
     var pastTwelve = false
     if (s.includes('PM')) pastTwelve = !pastTwelve
-    if (pastTwelve) {
-        var openingHour = +(s[0].concat(s[1]))
-        var newHour = openingHour + 12
-        var newString = []
-        for (let i = 2; i < s.length - 2; i++) {
-            newString.push(s[i])
-        }
-        let arrToString = newString.join('')
-        let newHourToString = newHour.toString()
-        return newHourToString.concat(arrToString)
+    let hour = +s.slice(0,2)
+    if (hour === 12) hour = 0
+    if (pastTwelve) hour += 12
+    let minSec = s.slice(2,8)
+    let hourString = hour.toString()
+    if (!pastTwelve && hour < 10) {
+        return '0' + hourString.concat(minSec)
     } else {
-        var newString = []
-        for (let i = 0; i < s.length - 2; i++) {
-            newString.push(s[i])
-        }
-        return newString.join('')
+        return hourString.concat(minSec)
     }
 }
 
-console.log(timeConversion('11:05:45AM'))
+console.log(timeConversion('01:05:45AM'))
