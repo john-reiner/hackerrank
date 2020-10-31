@@ -10,8 +10,6 @@ function kangaroo(x1, v1, x2, v2) {
         k2Pos += v2
         if (k1Pos === k2Pos) {
             return "YES"
-        } else {
-
         }
         if (k1JumpCount >= 10000) {
             running = false
