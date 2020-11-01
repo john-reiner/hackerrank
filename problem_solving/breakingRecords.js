@@ -3,7 +3,6 @@ function breakingRecords(scores) {
     let high = scores[0]
     let low = scores[0]
     for (let i = 0; i < scores.length; i++) {
-        console.log(scores[i])
         if (scores[i] > high) {
             high = scores[i]
             highLow[0] ++
